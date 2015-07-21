@@ -1,0 +1,22 @@
+<ion-view view-title="Leikurs">
+  <ion-content>
+       <div class="card">
+       {{SingleGame || json}}
+
+       <p> Umferð :{{SingleGame.UmferdNumer}}</p>
+       <p>{{SingleGame.FelagHeimaNafn}} vs {{SingleGame.FelagUtiNafn}}</p>
+       Fyrri hálfleikur :  <p>{{SingleGame.StadaFyrriHalfleikHeima}} - {{SingleGame.UrslitUti}}</p>
+       <p>{{SingleGame.UrslitHeima}} - {{SingleGame.StadaFyrriHalfleikUti}}</p>
+       <p>{{SingleGameVollurNafn}}</p>
+      Áhorfendur: <p>{{SingleGame.Ahorfendur}}</p>
+
+
+
+
+       <a class="item item-text-wrap item-icon-right" ng-click="GetSingleGamePlayerList({{SingleGame.LeikurNumer}})">
+               <p> GameReport</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </a>
+      </div>
+  </ion-content>
+</ion-view>

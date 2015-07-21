@@ -1,0 +1,10 @@
+<ion-view view-title="Leikir í umferð - Git test">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" ng-click="GetGame(playlist)">
+      <p>Umferð: {{playlist.UmferdNumer}}  - Leikdagur : {{playlist.LeikDagur}}</p>
+        {{playlist.FelagHeimaNafn }} {{playlist.UrslitHeima}} vs {{playlist.FelagUtiNafn }} {{playlist.UrslitUti}}
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
